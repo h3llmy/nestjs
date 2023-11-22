@@ -1,0 +1,30 @@
+### Create User
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "id": "asdas",
+    "username": "asds",
+    "email": "examspale@gmail.com",
+    "password": "mantap123"
+}
+
+### Get All User
+GET http://localhost:3000/user?page=1&limit=10
+
+### Get User By Id
+GET http://localhost:3000/user/d93b8c43-ec50-4b42-bcf9-ed08adbe8a58
+
+### Update User
+PATCH http://localhost:3000/user/d93b8c43-ec50-4b42-bcf9-ed08adbe8a58
+Content-Type: application/json
+
+{
+    "username": "josss",
+    "email": "example@gmail.com",
+    "password": "mantap1234"
+}
+
+### Delete User
+DELETE http://localhost:3000/user/d93b8c43-ec50-4b42-bcf9-ed08adbe8a58
+Content-Type: application/json
